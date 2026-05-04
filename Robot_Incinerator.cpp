@@ -91,6 +91,7 @@ public:
 				//enemy robot found, lock in coordinates to closest robot
 				int dist = calculate_distance(my_row, obj.m_row, my_col, obj.m_col);
 				//emergency logic if approched by enemy robot
+				/*
 				if (dist < 5) {
 					//switch target to robot within five units
 					m_target_row = obj.m_row;
@@ -98,6 +99,7 @@ public:
 					m_has_target = true;
 					return;
 				}
+				*/
 				//normal hunting if no emergency
 				if (dist < closest_dist) {
 					closest_dist = dist;
